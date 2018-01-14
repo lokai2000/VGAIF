@@ -254,114 +254,114 @@ begin
   registers_source.SCREENOFSX.base.update <= reg_records_Q.SCREENOFSX.base.update;
   registers_source.SCREENOFSX.base.address <= K_register_addresses(E_SCREENOFSX);
   registers_source.SCREENOFSX.base.default <= K_register_defaults(E_SCREENOFSX);
-  registers_source.SCREENOFSX.ofsX <= reg_records_Q.SCREENOFSX.base.raw(registers_source.SCREENOFSX.ofsX'range);
+  registers_source.SCREENOFSX.ofsX.data <= reg_records_Q.SCREENOFSX.base.raw(registers_source.SCREENOFSX.ofsX.data'range);
 
   registers_source.SCREENOFSY.base.raw <= reg_records_Q.SCREENOFSY.base.raw;
   registers_source.SCREENOFSY.base.update <= reg_records_Q.SCREENOFSY.base.update;
   registers_source.SCREENOFSY.base.address <= K_register_addresses(E_SCREENOFSY);
   registers_source.SCREENOFSY.base.default <= K_register_defaults(E_SCREENOFSY);
-  registers_source.SCREENOFSY.ofsY <= reg_records_Q.SCREENOFSY.base.raw(registers_source.SCREENOFSY.ofsY'range);
+  registers_source.SCREENOFSY.ofsY.data <= reg_records_Q.SCREENOFSY.base.raw(registers_source.SCREENOFSY.ofsY.data'range);
 
   registers_source.KEYSTATUS.base.raw <= reg_records_Q.KEYSTATUS.base.raw;
   registers_source.KEYSTATUS.base.update <= reg_records_Q.KEYSTATUS.base.update;
   registers_source.KEYSTATUS.base.address <= K_register_addresses(E_KEYSTATUS);
   registers_source.KEYSTATUS.base.default <= K_register_defaults(E_KEYSTATUS);
-  registers_source.KEYSTATUS.lblActive <= reg_records_Q.KEYSTATUS.base.raw(registers_source.KEYSTATUS.lblActive'range);
+  registers_source.KEYSTATUS.lblActive.data <= reg_records_Q.KEYSTATUS.base.raw(registers_source.KEYSTATUS.lblActive.data'range);
 
   registers_source.SCREENY.base.raw <= reg_records_Q.SCREENY.base.raw;
   registers_source.SCREENY.base.update <= reg_records_Q.SCREENY.base.update;
   registers_source.SCREENY.base.address <= K_register_addresses(E_SCREENY);
   registers_source.SCREENY.base.default <= K_register_defaults(E_SCREENY);
-  registers_source.SCREENY.ySize <= reg_records_Q.SCREENY.base.raw(registers_source.SCREENY.ySize'range);
+  registers_source.SCREENY.ySize.data <= reg_records_Q.SCREENY.base.raw(registers_source.SCREENY.ySize.data'range);
 
   registers_source.SCREENX.base.raw <= reg_records_Q.SCREENX.base.raw;
   registers_source.SCREENX.base.update <= reg_records_Q.SCREENX.base.update;
   registers_source.SCREENX.base.address <= K_register_addresses(E_SCREENX);
   registers_source.SCREENX.base.default <= K_register_defaults(E_SCREENX);
-  registers_source.SCREENX.xSize <= reg_records_Q.SCREENX.base.raw(registers_source.SCREENX.xSize'range);
+  registers_source.SCREENX.xSize.data <= reg_records_Q.SCREENX.base.raw(registers_source.SCREENX.xSize.data'range);
 
   registers_source.VIDEOY.base.raw <= reg_records_Q.VIDEOY.base.raw;
   registers_source.VIDEOY.base.update <= reg_records_Q.VIDEOY.base.update;
   registers_source.VIDEOY.base.address <= K_register_addresses(E_VIDEOY);
   registers_source.VIDEOY.base.default <= K_register_defaults(E_VIDEOY);
-  registers_source.VIDEOY.ySize <= reg_records_Q.VIDEOY.base.raw(registers_source.VIDEOY.ySize'range);
+  registers_source.VIDEOY.ySize.data <= reg_records_Q.VIDEOY.base.raw(registers_source.VIDEOY.ySize.data'range);
 
   registers_source.VIDEOX.base.raw <= reg_records_Q.VIDEOX.base.raw;
   registers_source.VIDEOX.base.update <= reg_records_Q.VIDEOX.base.update;
   registers_source.VIDEOX.base.address <= K_register_addresses(E_VIDEOX);
   registers_source.VIDEOX.base.default <= K_register_defaults(E_VIDEOX);
-  registers_source.VIDEOX.xSize <= reg_records_Q.VIDEOX.base.raw(registers_source.VIDEOX.xSize'range);
+  registers_source.VIDEOX.xSize.data <= reg_records_Q.VIDEOX.base.raw(registers_source.VIDEOX.xSize.data'range);
 
   registers_source.REVID.base.raw <= reg_records_Q.REVID.base.raw;
   registers_source.REVID.base.update <= reg_records_Q.REVID.base.update;
   registers_source.REVID.base.address <= K_register_addresses(E_REVID);
   registers_source.REVID.base.default <= K_register_defaults(E_REVID);
-  registers_source.REVID.hour <= reg_records_Q.REVID.base.raw(registers_source.REVID.hour'range);
-  registers_source.REVID.month <= reg_records_Q.REVID.base.raw(registers_source.REVID.month'range);
-  registers_source.REVID.class <= reg_records_Q.REVID.base.raw(registers_source.REVID.class'range);
-  registers_source.REVID.day <= reg_records_Q.REVID.base.raw(registers_source.REVID.day'range);
-  registers_source.REVID.year <= reg_records_Q.REVID.base.raw(registers_source.REVID.year'range);
+  registers_source.REVID.hour.data <= reg_records_Q.REVID.base.raw(registers_source.REVID.hour.data'range);
+  registers_source.REVID.month.data <= reg_records_Q.REVID.base.raw(registers_source.REVID.month.data'range);
+  registers_source.REVID.class.data <= reg_records_Q.REVID.base.raw(registers_source.REVID.class.data'range);
+  registers_source.REVID.day.data <= reg_records_Q.REVID.base.raw(registers_source.REVID.day.data'range);
+  registers_source.REVID.year.data <= reg_records_Q.REVID.base.raw(registers_source.REVID.year.data'range);
 
   registers_source.WRAPBACK.base.raw <= reg_records_Q.WRAPBACK.base.raw;
   registers_source.WRAPBACK.base.update <= reg_records_Q.WRAPBACK.base.update;
   registers_source.WRAPBACK.base.address <= K_register_addresses(E_WRAPBACK);
   registers_source.WRAPBACK.base.default <= K_register_defaults(E_WRAPBACK);
-  registers_source.WRAPBACK.wrapData <= reg_records_Q.WRAPBACK.base.raw(registers_source.WRAPBACK.wrapData'range);
+  registers_source.WRAPBACK.wrapData.data <= reg_records_Q.WRAPBACK.base.raw(registers_source.WRAPBACK.wrapData.data'range);
 
   registers_source.SYSID.base.raw <= reg_records_Q.SYSID.base.raw;
   registers_source.SYSID.base.update <= reg_records_Q.SYSID.base.update;
   registers_source.SYSID.base.address <= K_register_addresses(E_SYSID);
   registers_source.SYSID.base.default <= K_register_defaults(E_SYSID);
-  registers_source.SYSID.systemID <= reg_records_Q.SYSID.base.raw(registers_source.SYSID.systemID'range);
+  registers_source.SYSID.systemID.data <= reg_records_Q.SYSID.base.raw(registers_source.SYSID.systemID.data'range);
 
   registers_source.KEYACTIVE.base.raw <= reg_records_Q.KEYACTIVE.base.raw;
   registers_source.KEYACTIVE.base.update <= reg_records_Q.KEYACTIVE.base.update;
   registers_source.KEYACTIVE.base.address <= K_register_addresses(E_KEYACTIVE);
   registers_source.KEYACTIVE.base.default <= K_register_defaults(E_KEYACTIVE);
-  registers_source.KEYACTIVE.lastLbl <= reg_records_Q.KEYACTIVE.base.raw(registers_source.KEYACTIVE.lastLbl'range);
+  registers_source.KEYACTIVE.lastLbl.data <= reg_records_Q.KEYACTIVE.base.raw(registers_source.KEYACTIVE.lastLbl.data'range);
 
   registers_source.KEYLABEL.base.raw <= reg_records_Q.KEYLABEL.base.raw;
   registers_source.KEYLABEL.base.update <= reg_records_Q.KEYLABEL.base.update;
   registers_source.KEYLABEL.base.address <= K_register_addresses(E_KEYLABEL);
   registers_source.KEYLABEL.base.default <= K_register_defaults(E_KEYLABEL);
-  registers_source.KEYLABEL.keyLabel <= reg_records_Q.KEYLABEL.base.raw(registers_source.KEYLABEL.keyLabel'range);
+  registers_source.KEYLABEL.keyLabel.data <= reg_records_Q.KEYLABEL.base.raw(registers_source.KEYLABEL.keyLabel.data'range);
 
   registers_source.VIDEOPTR.base.raw <= reg_records_Q.VIDEOPTR.base.raw;
   registers_source.VIDEOPTR.base.update <= reg_records_Q.VIDEOPTR.base.update;
   registers_source.VIDEOPTR.base.address <= K_register_addresses(E_VIDEOPTR);
   registers_source.VIDEOPTR.base.default <= K_register_defaults(E_VIDEOPTR);
-  registers_source.VIDEOPTR.ptr <= reg_records_Q.VIDEOPTR.base.raw(registers_source.VIDEOPTR.ptr'range);
+  registers_source.VIDEOPTR.ptr.data <= reg_records_Q.VIDEOPTR.base.raw(registers_source.VIDEOPTR.ptr.data'range);
 
   registers_source.IFID.base.raw <= reg_records_Q.IFID.base.raw;
   registers_source.IFID.base.update <= reg_records_Q.IFID.base.update;
   registers_source.IFID.base.address <= K_register_addresses(E_IFID);
   registers_source.IFID.base.default <= K_register_defaults(E_IFID);
-  registers_source.IFID.interfaceID <= reg_records_Q.IFID.base.raw(registers_source.IFID.interfaceID'range);
+  registers_source.IFID.interfaceID.data <= reg_records_Q.IFID.base.raw(registers_source.IFID.interfaceID.data'range);
 
   registers_source.VIDEOCTRL.base.raw <= reg_records_Q.VIDEOCTRL.base.raw;
   registers_source.VIDEOCTRL.base.update <= reg_records_Q.VIDEOCTRL.base.update;
   registers_source.VIDEOCTRL.base.address <= K_register_addresses(E_VIDEOCTRL);
   registers_source.VIDEOCTRL.base.default <= K_register_defaults(E_VIDEOCTRL);
-  registers_source.VIDEOCTRL.rst <= reg_records_Q.VIDEOCTRL.base.raw(registers_source.VIDEOCTRL.rst'range);
-  registers_source.VIDEOCTRL.ena <= reg_records_Q.VIDEOCTRL.base.raw(registers_source.VIDEOCTRL.ena'range);
+  registers_source.VIDEOCTRL.rst.data <= reg_records_Q.VIDEOCTRL.base.raw(registers_source.VIDEOCTRL.rst.data'range);
+  registers_source.VIDEOCTRL.ena.data <= reg_records_Q.VIDEOCTRL.base.raw(registers_source.VIDEOCTRL.ena.data'range);
 
   registers_source.KEYREMAIN.base.raw <= reg_records_Q.KEYREMAIN.base.raw;
   registers_source.KEYREMAIN.base.update <= reg_records_Q.KEYREMAIN.base.update;
   registers_source.KEYREMAIN.base.address <= K_register_addresses(E_KEYREMAIN);
   registers_source.KEYREMAIN.base.default <= K_register_defaults(E_KEYREMAIN);
-  registers_source.KEYREMAIN.lblRemain <= reg_records_Q.KEYREMAIN.base.raw(registers_source.KEYREMAIN.lblRemain'range);
+  registers_source.KEYREMAIN.lblRemain.data <= reg_records_Q.KEYREMAIN.base.raw(registers_source.KEYREMAIN.lblRemain.data'range);
 
   registers_source.KEYCTRL.base.raw <= reg_records_Q.KEYCTRL.base.raw;
   registers_source.KEYCTRL.base.update <= reg_records_Q.KEYCTRL.base.update;
   registers_source.KEYCTRL.base.address <= K_register_addresses(E_KEYCTRL);
   registers_source.KEYCTRL.base.default <= K_register_defaults(E_KEYCTRL);
-  registers_source.KEYCTRL.acquire <= reg_records_Q.KEYCTRL.base.raw(registers_source.KEYCTRL.acquire'range);
+  registers_source.KEYCTRL.acquire.data <= reg_records_Q.KEYCTRL.base.raw(registers_source.KEYCTRL.acquire.data'range);
 
   registers_source.KEYSIZE.base.raw <= reg_records_Q.KEYSIZE.base.raw;
   registers_source.KEYSIZE.base.update <= reg_records_Q.KEYSIZE.base.update;
   registers_source.KEYSIZE.base.address <= K_register_addresses(E_KEYSIZE);
   registers_source.KEYSIZE.base.default <= K_register_defaults(E_KEYSIZE);
-  registers_source.KEYSIZE.lblSize <= reg_records_Q.KEYSIZE.base.raw(registers_source.KEYSIZE.lblSize'range);
+  registers_source.KEYSIZE.lblSize.data <= reg_records_Q.KEYSIZE.base.raw(registers_source.KEYSIZE.lblSize.data'range);
 
 
   C_register_write : process (
@@ -376,6 +376,232 @@ begin
     variable V_data   : std_logic_vector(K_REG_WIDTH-1 downto 0);
   begin
     V_addr := waddr_Q(K_reg_addr_hibit downto K_reg_addr_lobit);
+
+    V_data := (others=>'0');
+    V_data(registers_sink.SCREENOFSX.ofsX.data'range) := registers_sink.SCREENOFSX.ofsX.data;
+    if ( registers_sink.SCREENOFSX.ofsX.update = '1' ) then
+      for i in registers_sink.SCREENOFSX.ofsX.data'range loop
+        if ( K_register_external_mask(E_SCREENOFSX)(i) = '0' ) then
+          reg_records_D.SCREENOFSX.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.SCREENOFSY.ofsY.data'range) := registers_sink.SCREENOFSY.ofsY.data;
+    if ( registers_sink.SCREENOFSY.ofsY.update = '1' ) then
+      for i in registers_sink.SCREENOFSY.ofsY.data'range loop
+        if ( K_register_external_mask(E_SCREENOFSY)(i) = '0' ) then
+          reg_records_D.SCREENOFSY.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.KEYSTATUS.lblActive.data'range) := registers_sink.KEYSTATUS.lblActive.data;
+    if ( registers_sink.KEYSTATUS.lblActive.update = '1' ) then
+      for i in registers_sink.KEYSTATUS.lblActive.data'range loop
+        if ( K_register_external_mask(E_KEYSTATUS)(i) = '0' ) then
+          reg_records_D.KEYSTATUS.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.SCREENY.ySize.data'range) := registers_sink.SCREENY.ySize.data;
+    if ( registers_sink.SCREENY.ySize.update = '1' ) then
+      for i in registers_sink.SCREENY.ySize.data'range loop
+        if ( K_register_external_mask(E_SCREENY)(i) = '0' ) then
+          reg_records_D.SCREENY.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.SCREENX.xSize.data'range) := registers_sink.SCREENX.xSize.data;
+    if ( registers_sink.SCREENX.xSize.update = '1' ) then
+      for i in registers_sink.SCREENX.xSize.data'range loop
+        if ( K_register_external_mask(E_SCREENX)(i) = '0' ) then
+          reg_records_D.SCREENX.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.VIDEOY.ySize.data'range) := registers_sink.VIDEOY.ySize.data;
+    if ( registers_sink.VIDEOY.ySize.update = '1' ) then
+      for i in registers_sink.VIDEOY.ySize.data'range loop
+        if ( K_register_external_mask(E_VIDEOY)(i) = '0' ) then
+          reg_records_D.VIDEOY.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.VIDEOX.xSize.data'range) := registers_sink.VIDEOX.xSize.data;
+    if ( registers_sink.VIDEOX.xSize.update = '1' ) then
+      for i in registers_sink.VIDEOX.xSize.data'range loop
+        if ( K_register_external_mask(E_VIDEOX)(i) = '0' ) then
+          reg_records_D.VIDEOX.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.REVID.hour.data'range) := registers_sink.REVID.hour.data;
+    V_data(registers_sink.REVID.month.data'range) := registers_sink.REVID.month.data;
+    V_data(registers_sink.REVID.class.data'range) := registers_sink.REVID.class.data;
+    V_data(registers_sink.REVID.day.data'range) := registers_sink.REVID.day.data;
+    V_data(registers_sink.REVID.year.data'range) := registers_sink.REVID.year.data;
+    if ( registers_sink.REVID.hour.update = '1' ) then
+      for i in registers_sink.REVID.hour.data'range loop
+        if ( K_register_external_mask(E_REVID)(i) = '0' ) then
+          reg_records_D.REVID.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    if ( registers_sink.REVID.month.update = '1' ) then
+      for i in registers_sink.REVID.month.data'range loop
+        if ( K_register_external_mask(E_REVID)(i) = '0' ) then
+          reg_records_D.REVID.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    if ( registers_sink.REVID.class.update = '1' ) then
+      for i in registers_sink.REVID.class.data'range loop
+        if ( K_register_external_mask(E_REVID)(i) = '0' ) then
+          reg_records_D.REVID.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    if ( registers_sink.REVID.day.update = '1' ) then
+      for i in registers_sink.REVID.day.data'range loop
+        if ( K_register_external_mask(E_REVID)(i) = '0' ) then
+          reg_records_D.REVID.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    if ( registers_sink.REVID.year.update = '1' ) then
+      for i in registers_sink.REVID.year.data'range loop
+        if ( K_register_external_mask(E_REVID)(i) = '0' ) then
+          reg_records_D.REVID.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.WRAPBACK.wrapData.data'range) := registers_sink.WRAPBACK.wrapData.data;
+    if ( registers_sink.WRAPBACK.wrapData.update = '1' ) then
+      for i in registers_sink.WRAPBACK.wrapData.data'range loop
+        if ( K_register_external_mask(E_WRAPBACK)(i) = '0' ) then
+          reg_records_D.WRAPBACK.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.SYSID.systemID.data'range) := registers_sink.SYSID.systemID.data;
+    if ( registers_sink.SYSID.systemID.update = '1' ) then
+      for i in registers_sink.SYSID.systemID.data'range loop
+        if ( K_register_external_mask(E_SYSID)(i) = '0' ) then
+          reg_records_D.SYSID.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.KEYACTIVE.lastLbl.data'range) := registers_sink.KEYACTIVE.lastLbl.data;
+    if ( registers_sink.KEYACTIVE.lastLbl.update = '1' ) then
+      for i in registers_sink.KEYACTIVE.lastLbl.data'range loop
+        if ( K_register_external_mask(E_KEYACTIVE)(i) = '0' ) then
+          reg_records_D.KEYACTIVE.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.KEYLABEL.keyLabel.data'range) := registers_sink.KEYLABEL.keyLabel.data;
+    if ( registers_sink.KEYLABEL.keyLabel.update = '1' ) then
+      for i in registers_sink.KEYLABEL.keyLabel.data'range loop
+        if ( K_register_external_mask(E_KEYLABEL)(i) = '0' ) then
+          reg_records_D.KEYLABEL.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.VIDEOPTR.ptr.data'range) := registers_sink.VIDEOPTR.ptr.data;
+    if ( registers_sink.VIDEOPTR.ptr.update = '1' ) then
+      for i in registers_sink.VIDEOPTR.ptr.data'range loop
+        if ( K_register_external_mask(E_VIDEOPTR)(i) = '0' ) then
+          reg_records_D.VIDEOPTR.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.IFID.interfaceID.data'range) := registers_sink.IFID.interfaceID.data;
+    if ( registers_sink.IFID.interfaceID.update = '1' ) then
+      for i in registers_sink.IFID.interfaceID.data'range loop
+        if ( K_register_external_mask(E_IFID)(i) = '0' ) then
+          reg_records_D.IFID.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.VIDEOCTRL.rst.data'range) := registers_sink.VIDEOCTRL.rst.data;
+    V_data(registers_sink.VIDEOCTRL.ena.data'range) := registers_sink.VIDEOCTRL.ena.data;
+    if ( registers_sink.VIDEOCTRL.rst.update = '1' ) then
+      for i in registers_sink.VIDEOCTRL.rst.data'range loop
+        if ( K_register_external_mask(E_VIDEOCTRL)(i) = '0' ) then
+          reg_records_D.VIDEOCTRL.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    if ( registers_sink.VIDEOCTRL.ena.update = '1' ) then
+      for i in registers_sink.VIDEOCTRL.ena.data'range loop
+        if ( K_register_external_mask(E_VIDEOCTRL)(i) = '0' ) then
+          reg_records_D.VIDEOCTRL.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.KEYREMAIN.lblRemain.data'range) := registers_sink.KEYREMAIN.lblRemain.data;
+    if ( registers_sink.KEYREMAIN.lblRemain.update = '1' ) then
+      for i in registers_sink.KEYREMAIN.lblRemain.data'range loop
+        if ( K_register_external_mask(E_KEYREMAIN)(i) = '0' ) then
+          reg_records_D.KEYREMAIN.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.KEYCTRL.acquire.data'range) := registers_sink.KEYCTRL.acquire.data;
+    if ( registers_sink.KEYCTRL.acquire.update = '1' ) then
+      for i in registers_sink.KEYCTRL.acquire.data'range loop
+        if ( K_register_external_mask(E_KEYCTRL)(i) = '0' ) then
+          reg_records_D.KEYCTRL.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
+    V_data := (others=>'0');
+    V_data(registers_sink.KEYSIZE.lblSize.data'range) := registers_sink.KEYSIZE.lblSize.data;
+    if ( registers_sink.KEYSIZE.lblSize.update = '1' ) then
+      for i in registers_sink.KEYSIZE.lblSize.data'range loop
+        if ( K_register_external_mask(E_KEYSIZE)(i) = '0' ) then
+          reg_records_D.KEYSIZE.base.raw(i) <= V_data(i);
+        end if;
+      end loop;
+    end if;
+
 
     reg_records_D.SCREENOFSX.base.update   <= '0';
     for i in reg_records_Q.SCREENOFSX.base.raw'range loop
@@ -910,7 +1136,16 @@ begin
 
 
     V_data := (others=>'0');
-    V_data(registers_sink.SCREENOFSX.ofsX'range) := registers_sink.SCREENOFSX.ofsX;
+    V_data(registers_sink.SCREENOFSX.ofsX.data'range) := registers_sink.SCREENOFSX.ofsX.data;
+    if ( registers_sink.SCREENOFSX.ofsX.update = '1' ) then
+      for i in registers_sink.SCREENOFSX.ofsX.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_SCREENOFSX)(i) = '1' ) then
+          reg_records_D.SCREENOFSX.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_SCREENOFSX)(i) = '1' ) then
+          reg_records_D.SCREENOFSX.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.SCREENOFSX.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_SCREENOFSX)(i) = '1' ) then
@@ -922,7 +1157,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.SCREENOFSY.ofsY'range) := registers_sink.SCREENOFSY.ofsY;
+    V_data(registers_sink.SCREENOFSY.ofsY.data'range) := registers_sink.SCREENOFSY.ofsY.data;
+    if ( registers_sink.SCREENOFSY.ofsY.update = '1' ) then
+      for i in registers_sink.SCREENOFSY.ofsY.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_SCREENOFSY)(i) = '1' ) then
+          reg_records_D.SCREENOFSY.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_SCREENOFSY)(i) = '1' ) then
+          reg_records_D.SCREENOFSY.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.SCREENOFSY.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_SCREENOFSY)(i) = '1' ) then
@@ -934,7 +1178,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.KEYSTATUS.lblActive'range) := registers_sink.KEYSTATUS.lblActive;
+    V_data(registers_sink.KEYSTATUS.lblActive.data'range) := registers_sink.KEYSTATUS.lblActive.data;
+    if ( registers_sink.KEYSTATUS.lblActive.update = '1' ) then
+      for i in registers_sink.KEYSTATUS.lblActive.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_KEYSTATUS)(i) = '1' ) then
+          reg_records_D.KEYSTATUS.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_KEYSTATUS)(i) = '1' ) then
+          reg_records_D.KEYSTATUS.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.KEYSTATUS.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_KEYSTATUS)(i) = '1' ) then
@@ -946,7 +1199,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.SCREENY.ySize'range) := registers_sink.SCREENY.ySize;
+    V_data(registers_sink.SCREENY.ySize.data'range) := registers_sink.SCREENY.ySize.data;
+    if ( registers_sink.SCREENY.ySize.update = '1' ) then
+      for i in registers_sink.SCREENY.ySize.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_SCREENY)(i) = '1' ) then
+          reg_records_D.SCREENY.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_SCREENY)(i) = '1' ) then
+          reg_records_D.SCREENY.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.SCREENY.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_SCREENY)(i) = '1' ) then
@@ -958,7 +1220,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.SCREENX.xSize'range) := registers_sink.SCREENX.xSize;
+    V_data(registers_sink.SCREENX.xSize.data'range) := registers_sink.SCREENX.xSize.data;
+    if ( registers_sink.SCREENX.xSize.update = '1' ) then
+      for i in registers_sink.SCREENX.xSize.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_SCREENX)(i) = '1' ) then
+          reg_records_D.SCREENX.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_SCREENX)(i) = '1' ) then
+          reg_records_D.SCREENX.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.SCREENX.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_SCREENX)(i) = '1' ) then
@@ -970,7 +1241,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.VIDEOY.ySize'range) := registers_sink.VIDEOY.ySize;
+    V_data(registers_sink.VIDEOY.ySize.data'range) := registers_sink.VIDEOY.ySize.data;
+    if ( registers_sink.VIDEOY.ySize.update = '1' ) then
+      for i in registers_sink.VIDEOY.ySize.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_VIDEOY)(i) = '1' ) then
+          reg_records_D.VIDEOY.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_VIDEOY)(i) = '1' ) then
+          reg_records_D.VIDEOY.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.VIDEOY.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_VIDEOY)(i) = '1' ) then
@@ -982,7 +1262,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.VIDEOX.xSize'range) := registers_sink.VIDEOX.xSize;
+    V_data(registers_sink.VIDEOX.xSize.data'range) := registers_sink.VIDEOX.xSize.data;
+    if ( registers_sink.VIDEOX.xSize.update = '1' ) then
+      for i in registers_sink.VIDEOX.xSize.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_VIDEOX)(i) = '1' ) then
+          reg_records_D.VIDEOX.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_VIDEOX)(i) = '1' ) then
+          reg_records_D.VIDEOX.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.VIDEOX.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_VIDEOX)(i) = '1' ) then
@@ -994,11 +1283,56 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.REVID.hour'range) := registers_sink.REVID.hour;
-    V_data(registers_sink.REVID.month'range) := registers_sink.REVID.month;
-    V_data(registers_sink.REVID.class'range) := registers_sink.REVID.class;
-    V_data(registers_sink.REVID.day'range) := registers_sink.REVID.day;
-    V_data(registers_sink.REVID.year'range) := registers_sink.REVID.year;
+    V_data(registers_sink.REVID.hour.data'range) := registers_sink.REVID.hour.data;
+    V_data(registers_sink.REVID.month.data'range) := registers_sink.REVID.month.data;
+    V_data(registers_sink.REVID.class.data'range) := registers_sink.REVID.class.data;
+    V_data(registers_sink.REVID.day.data'range) := registers_sink.REVID.day.data;
+    V_data(registers_sink.REVID.year.data'range) := registers_sink.REVID.year.data;
+    if ( registers_sink.REVID.hour.update = '1' ) then
+      for i in registers_sink.REVID.hour.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_REVID)(i) = '1' ) then
+          reg_records_D.REVID.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_REVID)(i) = '1' ) then
+          reg_records_D.REVID.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
+    if ( registers_sink.REVID.month.update = '1' ) then
+      for i in registers_sink.REVID.month.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_REVID)(i) = '1' ) then
+          reg_records_D.REVID.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_REVID)(i) = '1' ) then
+          reg_records_D.REVID.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
+    if ( registers_sink.REVID.class.update = '1' ) then
+      for i in registers_sink.REVID.class.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_REVID)(i) = '1' ) then
+          reg_records_D.REVID.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_REVID)(i) = '1' ) then
+          reg_records_D.REVID.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
+    if ( registers_sink.REVID.day.update = '1' ) then
+      for i in registers_sink.REVID.day.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_REVID)(i) = '1' ) then
+          reg_records_D.REVID.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_REVID)(i) = '1' ) then
+          reg_records_D.REVID.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
+    if ( registers_sink.REVID.year.update = '1' ) then
+      for i in registers_sink.REVID.year.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_REVID)(i) = '1' ) then
+          reg_records_D.REVID.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_REVID)(i) = '1' ) then
+          reg_records_D.REVID.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.REVID.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_REVID)(i) = '1' ) then
@@ -1010,7 +1344,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.WRAPBACK.wrapData'range) := registers_sink.WRAPBACK.wrapData;
+    V_data(registers_sink.WRAPBACK.wrapData.data'range) := registers_sink.WRAPBACK.wrapData.data;
+    if ( registers_sink.WRAPBACK.wrapData.update = '1' ) then
+      for i in registers_sink.WRAPBACK.wrapData.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_WRAPBACK)(i) = '1' ) then
+          reg_records_D.WRAPBACK.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_WRAPBACK)(i) = '1' ) then
+          reg_records_D.WRAPBACK.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.WRAPBACK.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_WRAPBACK)(i) = '1' ) then
@@ -1022,7 +1365,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.SYSID.systemID'range) := registers_sink.SYSID.systemID;
+    V_data(registers_sink.SYSID.systemID.data'range) := registers_sink.SYSID.systemID.data;
+    if ( registers_sink.SYSID.systemID.update = '1' ) then
+      for i in registers_sink.SYSID.systemID.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_SYSID)(i) = '1' ) then
+          reg_records_D.SYSID.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_SYSID)(i) = '1' ) then
+          reg_records_D.SYSID.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.SYSID.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_SYSID)(i) = '1' ) then
@@ -1034,7 +1386,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.KEYACTIVE.lastLbl'range) := registers_sink.KEYACTIVE.lastLbl;
+    V_data(registers_sink.KEYACTIVE.lastLbl.data'range) := registers_sink.KEYACTIVE.lastLbl.data;
+    if ( registers_sink.KEYACTIVE.lastLbl.update = '1' ) then
+      for i in registers_sink.KEYACTIVE.lastLbl.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_KEYACTIVE)(i) = '1' ) then
+          reg_records_D.KEYACTIVE.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_KEYACTIVE)(i) = '1' ) then
+          reg_records_D.KEYACTIVE.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.KEYACTIVE.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_KEYACTIVE)(i) = '1' ) then
@@ -1046,7 +1407,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.KEYLABEL.keyLabel'range) := registers_sink.KEYLABEL.keyLabel;
+    V_data(registers_sink.KEYLABEL.keyLabel.data'range) := registers_sink.KEYLABEL.keyLabel.data;
+    if ( registers_sink.KEYLABEL.keyLabel.update = '1' ) then
+      for i in registers_sink.KEYLABEL.keyLabel.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_KEYLABEL)(i) = '1' ) then
+          reg_records_D.KEYLABEL.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_KEYLABEL)(i) = '1' ) then
+          reg_records_D.KEYLABEL.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.KEYLABEL.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_KEYLABEL)(i) = '1' ) then
@@ -1058,7 +1428,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.VIDEOPTR.ptr'range) := registers_sink.VIDEOPTR.ptr;
+    V_data(registers_sink.VIDEOPTR.ptr.data'range) := registers_sink.VIDEOPTR.ptr.data;
+    if ( registers_sink.VIDEOPTR.ptr.update = '1' ) then
+      for i in registers_sink.VIDEOPTR.ptr.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_VIDEOPTR)(i) = '1' ) then
+          reg_records_D.VIDEOPTR.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_VIDEOPTR)(i) = '1' ) then
+          reg_records_D.VIDEOPTR.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.VIDEOPTR.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_VIDEOPTR)(i) = '1' ) then
@@ -1070,7 +1449,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.IFID.interfaceID'range) := registers_sink.IFID.interfaceID;
+    V_data(registers_sink.IFID.interfaceID.data'range) := registers_sink.IFID.interfaceID.data;
+    if ( registers_sink.IFID.interfaceID.update = '1' ) then
+      for i in registers_sink.IFID.interfaceID.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_IFID)(i) = '1' ) then
+          reg_records_D.IFID.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_IFID)(i) = '1' ) then
+          reg_records_D.IFID.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.IFID.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_IFID)(i) = '1' ) then
@@ -1082,8 +1470,26 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.VIDEOCTRL.rst'range) := registers_sink.VIDEOCTRL.rst;
-    V_data(registers_sink.VIDEOCTRL.ena'range) := registers_sink.VIDEOCTRL.ena;
+    V_data(registers_sink.VIDEOCTRL.rst.data'range) := registers_sink.VIDEOCTRL.rst.data;
+    V_data(registers_sink.VIDEOCTRL.ena.data'range) := registers_sink.VIDEOCTRL.ena.data;
+    if ( registers_sink.VIDEOCTRL.rst.update = '1' ) then
+      for i in registers_sink.VIDEOCTRL.rst.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_VIDEOCTRL)(i) = '1' ) then
+          reg_records_D.VIDEOCTRL.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_VIDEOCTRL)(i) = '1' ) then
+          reg_records_D.VIDEOCTRL.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
+    if ( registers_sink.VIDEOCTRL.ena.update = '1' ) then
+      for i in registers_sink.VIDEOCTRL.ena.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_VIDEOCTRL)(i) = '1' ) then
+          reg_records_D.VIDEOCTRL.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_VIDEOCTRL)(i) = '1' ) then
+          reg_records_D.VIDEOCTRL.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.VIDEOCTRL.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_VIDEOCTRL)(i) = '1' ) then
@@ -1095,7 +1501,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.KEYREMAIN.lblRemain'range) := registers_sink.KEYREMAIN.lblRemain;
+    V_data(registers_sink.KEYREMAIN.lblRemain.data'range) := registers_sink.KEYREMAIN.lblRemain.data;
+    if ( registers_sink.KEYREMAIN.lblRemain.update = '1' ) then
+      for i in registers_sink.KEYREMAIN.lblRemain.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_KEYREMAIN)(i) = '1' ) then
+          reg_records_D.KEYREMAIN.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_KEYREMAIN)(i) = '1' ) then
+          reg_records_D.KEYREMAIN.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.KEYREMAIN.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_KEYREMAIN)(i) = '1' ) then
@@ -1107,7 +1522,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.KEYCTRL.acquire'range) := registers_sink.KEYCTRL.acquire;
+    V_data(registers_sink.KEYCTRL.acquire.data'range) := registers_sink.KEYCTRL.acquire.data;
+    if ( registers_sink.KEYCTRL.acquire.update = '1' ) then
+      for i in registers_sink.KEYCTRL.acquire.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_KEYCTRL)(i) = '1' ) then
+          reg_records_D.KEYCTRL.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_KEYCTRL)(i) = '1' ) then
+          reg_records_D.KEYCTRL.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.KEYCTRL.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_KEYCTRL)(i) = '1' ) then
@@ -1119,7 +1543,16 @@ begin
     end if;
 
     V_data := (others=>'0');
-    V_data(registers_sink.KEYSIZE.lblSize'range) := registers_sink.KEYSIZE.lblSize;
+    V_data(registers_sink.KEYSIZE.lblSize.data'range) := registers_sink.KEYSIZE.lblSize.data;
+    if ( registers_sink.KEYSIZE.lblSize.update = '1' ) then
+      for i in registers_sink.KEYSIZE.lblSize.data'range loop
+        if ( V_data(i) = '1' and K_register_onetoset_mask(E_KEYSIZE)(i) = '1' ) then
+          reg_records_D.KEYSIZE.base.raw(i) <= '0';
+        elsif ( V_data(i) = '1' and K_register_onetoclr_mask(E_KEYSIZE)(i) = '1' ) then
+          reg_records_D.KEYSIZE.base.raw(i) <= '1';
+        end if;
+      end loop;
+    end if;
     if ( registers_sink.KEYSIZE.base.update = '1' ) then
       for i in 0 to K_REG_WIDTH-1 loop
         if ( V_data(i) = '1' and K_register_onetoset_mask(E_KEYSIZE)(i) = '1' ) then
@@ -1139,7 +1572,7 @@ begin
   )
   begin
     reg_records_I.SCREENOFSX.base.raw <= (others=>'0');
-    reg_records_I.SCREENOFSX.base.raw(reg_records_I.SCREENOFSX.ofsX'range) <= registers_sink.SCREENOFSX.ofsX;
+    reg_records_I.SCREENOFSX.base.raw(reg_records_I.SCREENOFSX.ofsX.data'range) <= registers_sink.SCREENOFSX.ofsX.data;
   end process C_SCREENOFSX_base;
 
   C_SCREENOFSY_base : process (
@@ -1147,7 +1580,7 @@ begin
   )
   begin
     reg_records_I.SCREENOFSY.base.raw <= (others=>'0');
-    reg_records_I.SCREENOFSY.base.raw(reg_records_I.SCREENOFSY.ofsY'range) <= registers_sink.SCREENOFSY.ofsY;
+    reg_records_I.SCREENOFSY.base.raw(reg_records_I.SCREENOFSY.ofsY.data'range) <= registers_sink.SCREENOFSY.ofsY.data;
   end process C_SCREENOFSY_base;
 
   C_KEYSTATUS_base : process (
@@ -1155,7 +1588,7 @@ begin
   )
   begin
     reg_records_I.KEYSTATUS.base.raw <= (others=>'0');
-    reg_records_I.KEYSTATUS.base.raw(reg_records_I.KEYSTATUS.lblActive'range) <= registers_sink.KEYSTATUS.lblActive;
+    reg_records_I.KEYSTATUS.base.raw(reg_records_I.KEYSTATUS.lblActive.data'range) <= registers_sink.KEYSTATUS.lblActive.data;
   end process C_KEYSTATUS_base;
 
   C_SCREENY_base : process (
@@ -1163,7 +1596,7 @@ begin
   )
   begin
     reg_records_I.SCREENY.base.raw <= (others=>'0');
-    reg_records_I.SCREENY.base.raw(reg_records_I.SCREENY.ySize'range) <= registers_sink.SCREENY.ySize;
+    reg_records_I.SCREENY.base.raw(reg_records_I.SCREENY.ySize.data'range) <= registers_sink.SCREENY.ySize.data;
   end process C_SCREENY_base;
 
   C_SCREENX_base : process (
@@ -1171,7 +1604,7 @@ begin
   )
   begin
     reg_records_I.SCREENX.base.raw <= (others=>'0');
-    reg_records_I.SCREENX.base.raw(reg_records_I.SCREENX.xSize'range) <= registers_sink.SCREENX.xSize;
+    reg_records_I.SCREENX.base.raw(reg_records_I.SCREENX.xSize.data'range) <= registers_sink.SCREENX.xSize.data;
   end process C_SCREENX_base;
 
   C_VIDEOY_base : process (
@@ -1179,7 +1612,7 @@ begin
   )
   begin
     reg_records_I.VIDEOY.base.raw <= (others=>'0');
-    reg_records_I.VIDEOY.base.raw(reg_records_I.VIDEOY.ySize'range) <= registers_sink.VIDEOY.ySize;
+    reg_records_I.VIDEOY.base.raw(reg_records_I.VIDEOY.ySize.data'range) <= registers_sink.VIDEOY.ySize.data;
   end process C_VIDEOY_base;
 
   C_VIDEOX_base : process (
@@ -1187,7 +1620,7 @@ begin
   )
   begin
     reg_records_I.VIDEOX.base.raw <= (others=>'0');
-    reg_records_I.VIDEOX.base.raw(reg_records_I.VIDEOX.xSize'range) <= registers_sink.VIDEOX.xSize;
+    reg_records_I.VIDEOX.base.raw(reg_records_I.VIDEOX.xSize.data'range) <= registers_sink.VIDEOX.xSize.data;
   end process C_VIDEOX_base;
 
   C_REVID_base : process (
@@ -1195,11 +1628,11 @@ begin
   )
   begin
     reg_records_I.REVID.base.raw <= (others=>'0');
-    reg_records_I.REVID.base.raw(reg_records_I.REVID.hour'range) <= registers_sink.REVID.hour;
-    reg_records_I.REVID.base.raw(reg_records_I.REVID.month'range) <= registers_sink.REVID.month;
-    reg_records_I.REVID.base.raw(reg_records_I.REVID.class'range) <= registers_sink.REVID.class;
-    reg_records_I.REVID.base.raw(reg_records_I.REVID.day'range) <= registers_sink.REVID.day;
-    reg_records_I.REVID.base.raw(reg_records_I.REVID.year'range) <= registers_sink.REVID.year;
+    reg_records_I.REVID.base.raw(reg_records_I.REVID.hour.data'range) <= registers_sink.REVID.hour.data;
+    reg_records_I.REVID.base.raw(reg_records_I.REVID.month.data'range) <= registers_sink.REVID.month.data;
+    reg_records_I.REVID.base.raw(reg_records_I.REVID.class.data'range) <= registers_sink.REVID.class.data;
+    reg_records_I.REVID.base.raw(reg_records_I.REVID.day.data'range) <= registers_sink.REVID.day.data;
+    reg_records_I.REVID.base.raw(reg_records_I.REVID.year.data'range) <= registers_sink.REVID.year.data;
   end process C_REVID_base;
 
   C_WRAPBACK_base : process (
@@ -1207,7 +1640,7 @@ begin
   )
   begin
     reg_records_I.WRAPBACK.base.raw <= (others=>'0');
-    reg_records_I.WRAPBACK.base.raw(reg_records_I.WRAPBACK.wrapData'range) <= registers_sink.WRAPBACK.wrapData;
+    reg_records_I.WRAPBACK.base.raw(reg_records_I.WRAPBACK.wrapData.data'range) <= registers_sink.WRAPBACK.wrapData.data;
   end process C_WRAPBACK_base;
 
   C_SYSID_base : process (
@@ -1215,7 +1648,7 @@ begin
   )
   begin
     reg_records_I.SYSID.base.raw <= (others=>'0');
-    reg_records_I.SYSID.base.raw(reg_records_I.SYSID.systemID'range) <= registers_sink.SYSID.systemID;
+    reg_records_I.SYSID.base.raw(reg_records_I.SYSID.systemID.data'range) <= registers_sink.SYSID.systemID.data;
   end process C_SYSID_base;
 
   C_KEYACTIVE_base : process (
@@ -1223,7 +1656,7 @@ begin
   )
   begin
     reg_records_I.KEYACTIVE.base.raw <= (others=>'0');
-    reg_records_I.KEYACTIVE.base.raw(reg_records_I.KEYACTIVE.lastLbl'range) <= registers_sink.KEYACTIVE.lastLbl;
+    reg_records_I.KEYACTIVE.base.raw(reg_records_I.KEYACTIVE.lastLbl.data'range) <= registers_sink.KEYACTIVE.lastLbl.data;
   end process C_KEYACTIVE_base;
 
   C_KEYLABEL_base : process (
@@ -1231,7 +1664,7 @@ begin
   )
   begin
     reg_records_I.KEYLABEL.base.raw <= (others=>'0');
-    reg_records_I.KEYLABEL.base.raw(reg_records_I.KEYLABEL.keyLabel'range) <= registers_sink.KEYLABEL.keyLabel;
+    reg_records_I.KEYLABEL.base.raw(reg_records_I.KEYLABEL.keyLabel.data'range) <= registers_sink.KEYLABEL.keyLabel.data;
   end process C_KEYLABEL_base;
 
   C_VIDEOPTR_base : process (
@@ -1239,7 +1672,7 @@ begin
   )
   begin
     reg_records_I.VIDEOPTR.base.raw <= (others=>'0');
-    reg_records_I.VIDEOPTR.base.raw(reg_records_I.VIDEOPTR.ptr'range) <= registers_sink.VIDEOPTR.ptr;
+    reg_records_I.VIDEOPTR.base.raw(reg_records_I.VIDEOPTR.ptr.data'range) <= registers_sink.VIDEOPTR.ptr.data;
   end process C_VIDEOPTR_base;
 
   C_IFID_base : process (
@@ -1247,7 +1680,7 @@ begin
   )
   begin
     reg_records_I.IFID.base.raw <= (others=>'0');
-    reg_records_I.IFID.base.raw(reg_records_I.IFID.interfaceID'range) <= registers_sink.IFID.interfaceID;
+    reg_records_I.IFID.base.raw(reg_records_I.IFID.interfaceID.data'range) <= registers_sink.IFID.interfaceID.data;
   end process C_IFID_base;
 
   C_VIDEOCTRL_base : process (
@@ -1255,8 +1688,8 @@ begin
   )
   begin
     reg_records_I.VIDEOCTRL.base.raw <= (others=>'0');
-    reg_records_I.VIDEOCTRL.base.raw(reg_records_I.VIDEOCTRL.rst'range) <= registers_sink.VIDEOCTRL.rst;
-    reg_records_I.VIDEOCTRL.base.raw(reg_records_I.VIDEOCTRL.ena'range) <= registers_sink.VIDEOCTRL.ena;
+    reg_records_I.VIDEOCTRL.base.raw(reg_records_I.VIDEOCTRL.rst.data'range) <= registers_sink.VIDEOCTRL.rst.data;
+    reg_records_I.VIDEOCTRL.base.raw(reg_records_I.VIDEOCTRL.ena.data'range) <= registers_sink.VIDEOCTRL.ena.data;
   end process C_VIDEOCTRL_base;
 
   C_KEYREMAIN_base : process (
@@ -1264,7 +1697,7 @@ begin
   )
   begin
     reg_records_I.KEYREMAIN.base.raw <= (others=>'0');
-    reg_records_I.KEYREMAIN.base.raw(reg_records_I.KEYREMAIN.lblRemain'range) <= registers_sink.KEYREMAIN.lblRemain;
+    reg_records_I.KEYREMAIN.base.raw(reg_records_I.KEYREMAIN.lblRemain.data'range) <= registers_sink.KEYREMAIN.lblRemain.data;
   end process C_KEYREMAIN_base;
 
   C_KEYCTRL_base : process (
@@ -1272,7 +1705,7 @@ begin
   )
   begin
     reg_records_I.KEYCTRL.base.raw <= (others=>'0');
-    reg_records_I.KEYCTRL.base.raw(reg_records_I.KEYCTRL.acquire'range) <= registers_sink.KEYCTRL.acquire;
+    reg_records_I.KEYCTRL.base.raw(reg_records_I.KEYCTRL.acquire.data'range) <= registers_sink.KEYCTRL.acquire.data;
   end process C_KEYCTRL_base;
 
   C_KEYSIZE_base : process (
@@ -1280,7 +1713,7 @@ begin
   )
   begin
     reg_records_I.KEYSIZE.base.raw <= (others=>'0');
-    reg_records_I.KEYSIZE.base.raw(reg_records_I.KEYSIZE.lblSize'range) <= registers_sink.KEYSIZE.lblSize;
+    reg_records_I.KEYSIZE.base.raw(reg_records_I.KEYSIZE.lblSize.data'range) <= registers_sink.KEYSIZE.lblSize.data;
   end process C_KEYSIZE_base;
 
 

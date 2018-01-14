@@ -305,34 +305,34 @@ begin
      vgaRst => vgaRst,
      sysClk => sysClk,
      sysRst => sysRst,
-     extRst => registers_source.VIDEOCTRL.rst(registers_source.VIDEOCTRL.rst'left)
+     extRst => registers_source.VIDEOCTRL.rst.data(registers_source.VIDEOCTRL.rst.data'left)
    );
 
 
-  registers_sink.REVID.class <= K_CLASS;
-  registers_sink.REVID.year  <= K_YEAR;
-  registers_sink.REVID.month <= K_MONTH;
-  registers_sink.REVID.day   <= K_DAY;
-  registers_sink.REVID.hour  <= K_HOUR;
+  registers_sink.REVID.class.data <= K_CLASS;
+  registers_sink.REVID.year.data  <= K_YEAR;
+  registers_sink.REVID.month.data <= K_MONTH;
+  registers_sink.REVID.day.data   <= K_DAY;
+  registers_sink.REVID.hour.data  <= K_HOUR;
 
-  registers_sink.IFID.interfaceID <= K_IFID;
+  registers_sink.IFID.interfaceID.data <= K_IFID;
 
-  registers_sink.WRAPBACK.wrapData <= registers_source.WRAPBACK.base.raw xor registers_source.SYSID.base.raw;
+  registers_sink.WRAPBACK.wrapData.data <= registers_source.WRAPBACK.base.raw xor registers_source.SYSID.base.raw;
 
-  screen_ena  <= registers_source.VIDEOCTRL.ena(0);
-  screen_ptr  <= registers_source.VIDEOPTR.ptr;
-  screen_ofsx <= registers_source.SCREENOFSX.ofsX;
-  screen_ofsy <= registers_source.SCREENOFSY.ofsY;
+  screen_ena  <= registers_source.VIDEOCTRL.ena.data(0);
+  screen_ptr  <= registers_source.VIDEOPTR.ptr.data;
+  screen_ofsx <= registers_source.SCREENOFSX.ofsX.data;
+  screen_ofsy <= registers_source.SCREENOFSY.ofsY.data;
 
-  registers_sink.VIDEOX.xSize  <= K_VIDEOX;
-  registers_sink.VIDEOY.ySize  <= K_VIDEOX;
-  registers_sink.SCREENX.xSize <= K_SCREENX;
-  registers_sink.SCREENY.ySize <= K_SCREENY;
+  registers_sink.VIDEOX.xSize.data  <= K_VIDEOX;
+  registers_sink.VIDEOY.ySize.data  <= K_VIDEOX;
+  registers_sink.SCREENX.xSize.data <= K_SCREENX;
+  registers_sink.SCREENY.ySize.data <= K_SCREENY;
 
-  registers_sink.KEYSIZE.lblSize        <= (others=>'0');
-  registers_sink.KEYREMAIN.lblRemain    <= (others=>'0');
-  registers_sink.KEYSTATUS.lblActive(0) <= '0';
-  registers_sink.KEYACTIVE.lastLbl      <= (others=>'0');
+  registers_sink.KEYSIZE.lblSize.data        <= (others=>'0');
+  registers_sink.KEYREMAIN.lblRemain.data    <= (others=>'0');
+  registers_sink.KEYSTATUS.lblActive.data(0) <= '0';
+  registers_sink.KEYACTIVE.lastLbl.data      <= (others=>'0');
   
 
   U_reg : vga_registers_core 

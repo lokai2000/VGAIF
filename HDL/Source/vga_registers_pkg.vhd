@@ -209,117 +209,255 @@ package vga_registers_pkg is
       accessed : std_logic;
     end record;
 
+  type T_reg_screenofsx_ofsx is
+    record
+      update : std_logic;
+      data : std_logic_vector(15 downto 0);
+    end record;
+
   type T_reg_screenofsx is
     record
       base : T_reg_base;
-      ofsX : std_logic_vector(15 downto 0);
+      ofsX : T_reg_screenofsx_ofsx;
+    end record;
+
+  type T_reg_screenofsy_ofsy is
+    record
+      update : std_logic;
+      data : std_logic_vector(15 downto 0);
     end record;
 
   type T_reg_screenofsy is
     record
       base : T_reg_base;
-      ofsY : std_logic_vector(15 downto 0);
+      ofsY : T_reg_screenofsy_ofsy;
+    end record;
+
+  type T_reg_keystatus_lblactive is
+    record
+      update : std_logic;
+      data : std_logic_vector(0 downto 0);
     end record;
 
   type T_reg_keystatus is
     record
       base : T_reg_base;
-      lblActive : std_logic_vector(0 downto 0);
+      lblActive : T_reg_keystatus_lblactive;
+    end record;
+
+  type T_reg_screeny_ysize is
+    record
+      update : std_logic;
+      data : std_logic_vector(15 downto 0);
     end record;
 
   type T_reg_screeny is
     record
       base : T_reg_base;
-      ySize : std_logic_vector(15 downto 0);
+      ySize : T_reg_screeny_ysize;
+    end record;
+
+  type T_reg_screenx_xsize is
+    record
+      update : std_logic;
+      data : std_logic_vector(15 downto 0);
     end record;
 
   type T_reg_screenx is
     record
       base : T_reg_base;
-      xSize : std_logic_vector(15 downto 0);
+      xSize : T_reg_screenx_xsize;
+    end record;
+
+  type T_reg_videoy_ysize is
+    record
+      update : std_logic;
+      data : std_logic_vector(15 downto 0);
     end record;
 
   type T_reg_videoy is
     record
       base : T_reg_base;
-      ySize : std_logic_vector(15 downto 0);
+      ySize : T_reg_videoy_ysize;
+    end record;
+
+  type T_reg_videox_xsize is
+    record
+      update : std_logic;
+      data : std_logic_vector(15 downto 0);
     end record;
 
   type T_reg_videox is
     record
       base : T_reg_base;
-      xSize : std_logic_vector(15 downto 0);
+      xSize : T_reg_videox_xsize;
+    end record;
+
+  type T_reg_revid_hour is
+    record
+      update : std_logic;
+      data : std_logic_vector(4 downto 0);
+    end record;
+
+  type T_reg_revid_month is
+    record
+      update : std_logic;
+      data : std_logic_vector(13 downto 10);
+    end record;
+
+  type T_reg_revid_class is
+    record
+      update : std_logic;
+      data : std_logic_vector(31 downto 25);
+    end record;
+
+  type T_reg_revid_day is
+    record
+      update : std_logic;
+      data : std_logic_vector(9 downto 5);
+    end record;
+
+  type T_reg_revid_year is
+    record
+      update : std_logic;
+      data : std_logic_vector(24 downto 14);
     end record;
 
   type T_reg_revid is
     record
       base : T_reg_base;
-      hour : std_logic_vector(4 downto 0);
-      month : std_logic_vector(13 downto 10);
-      class : std_logic_vector(31 downto 25);
-      day : std_logic_vector(9 downto 5);
-      year : std_logic_vector(24 downto 14);
+      hour : T_reg_revid_hour;
+      month : T_reg_revid_month;
+      class : T_reg_revid_class;
+      day : T_reg_revid_day;
+      year : T_reg_revid_year;
+    end record;
+
+  type T_reg_wrapback_wrapdata is
+    record
+      update : std_logic;
+      data : std_logic_vector(31 downto 0);
     end record;
 
   type T_reg_wrapback is
     record
       base : T_reg_base;
-      wrapData : std_logic_vector(31 downto 0);
+      wrapData : T_reg_wrapback_wrapdata;
+    end record;
+
+  type T_reg_sysid_systemid is
+    record
+      update : std_logic;
+      data : std_logic_vector(31 downto 0);
     end record;
 
   type T_reg_sysid is
     record
       base : T_reg_base;
-      systemID : std_logic_vector(31 downto 0);
+      systemID : T_reg_sysid_systemid;
+    end record;
+
+  type T_reg_keyactive_lastlbl is
+    record
+      update : std_logic;
+      data : std_logic_vector(31 downto 0);
     end record;
 
   type T_reg_keyactive is
     record
       base : T_reg_base;
-      lastLbl : std_logic_vector(31 downto 0);
+      lastLbl : T_reg_keyactive_lastlbl;
+    end record;
+
+  type T_reg_keylabel_keylabel is
+    record
+      update : std_logic;
+      data : std_logic_vector(31 downto 0);
     end record;
 
   type T_reg_keylabel is
     record
       base : T_reg_base;
-      keyLabel : std_logic_vector(31 downto 0);
+      keyLabel : T_reg_keylabel_keylabel;
+    end record;
+
+  type T_reg_videoptr_ptr is
+    record
+      update : std_logic;
+      data : std_logic_vector(31 downto 0);
     end record;
 
   type T_reg_videoptr is
     record
       base : T_reg_base;
-      ptr : std_logic_vector(31 downto 0);
+      ptr : T_reg_videoptr_ptr;
+    end record;
+
+  type T_reg_ifid_interfaceid is
+    record
+      update : std_logic;
+      data : std_logic_vector(31 downto 0);
     end record;
 
   type T_reg_ifid is
     record
       base : T_reg_base;
-      interfaceID : std_logic_vector(31 downto 0);
+      interfaceID : T_reg_ifid_interfaceid;
+    end record;
+
+  type T_reg_videoctrl_rst is
+    record
+      update : std_logic;
+      data : std_logic_vector(31 downto 31);
+    end record;
+
+  type T_reg_videoctrl_ena is
+    record
+      update : std_logic;
+      data : std_logic_vector(0 downto 0);
     end record;
 
   type T_reg_videoctrl is
     record
       base : T_reg_base;
-      rst : std_logic_vector(31 downto 31);
-      ena : std_logic_vector(0 downto 0);
+      rst : T_reg_videoctrl_rst;
+      ena : T_reg_videoctrl_ena;
+    end record;
+
+  type T_reg_keyremain_lblremain is
+    record
+      update : std_logic;
+      data : std_logic_vector(31 downto 0);
     end record;
 
   type T_reg_keyremain is
     record
       base : T_reg_base;
-      lblRemain : std_logic_vector(31 downto 0);
+      lblRemain : T_reg_keyremain_lblremain;
+    end record;
+
+  type T_reg_keyctrl_acquire is
+    record
+      update : std_logic;
+      data : std_logic_vector(0 downto 0);
     end record;
 
   type T_reg_keyctrl is
     record
       base : T_reg_base;
-      acquire : std_logic_vector(0 downto 0);
+      acquire : T_reg_keyctrl_acquire;
+    end record;
+
+  type T_reg_keysize_lblsize is
+    record
+      update : std_logic;
+      data : std_logic_vector(31 downto 0);
     end record;
 
   type T_reg_keysize is
     record
       base : T_reg_base;
-      lblSize : std_logic_vector(31 downto 0);
+      lblSize : T_reg_keysize_lblsize;
     end record;
 
   type T_registers is
